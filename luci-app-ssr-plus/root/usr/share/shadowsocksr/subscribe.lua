@@ -170,6 +170,7 @@ local function processData(szType, content)
 		local info = jsonParse(content)
 		result.type = 'v2ray'
 		result.v2ray_protocol = 'vmess'
+		result.alter_id = info.aid
 		result.server = info.add
 		result.server_port = info.port
 		result.transport = info.net
